@@ -1,0 +1,16 @@
+$primary: #FFD292;
+$secondary: #A192FF;
+$tertiary: #9B6518;
+$blackAlpha: rgba(0, 0, 0, 0.92);
+
+@mixin mobile() {
+    @media screen and (max-width: 600px) {
+        @content;
+    }
+}
+
+@mixin tablet() {
+    @media screen and (max-width: 1023px) {
+        @content;
+    }
+}

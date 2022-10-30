@@ -1,0 +1,58 @@
+@import "mixins";
+
+.footer-container {
+    .footer-logo-img {
+        position: relative;
+        width: 52px;
+        height: 52px;
+        @include mobile {
+            width: 45px;
+            height: 45px;
+        }
+    }
+    .footer-logo-img::before, .footer-logo-img::after {
+        content: "";
+        position: absolute;
+        width: 40vw;
+        height: 1px;
+        top: 50%;
+        background-color: $primary;
+        @include mobile {
+            width: 35vw;
+        }
+    }
+    .footer-logo-img::after {
+        right: 100%;
+    }
+    .footer-logo-img::before {
+        left: 100%;
+    }
+    .footer-name-img {
+        position: relative;
+        width: 100px;
+        height: 15px;
+        margin-top: 1rem;
+        @include mobile {
+            width: 90px;
+            height: 10px;
+        }
+    }
+    .footer-social-icon {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        margin: 0 0.5rem;
+        @include mobile {
+            width: 15px;
+            height: 15px;
+        }
+    }
+    .footer-social-icon:first-child {
+        margin-left: 0;
+    }
+    .footer-menu {
+        @include mobile {
+            display: none;
+        }
+    }
+}

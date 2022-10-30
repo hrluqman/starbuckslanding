@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@400;600&family=Sen:wght@400;700&display=swap');
+@import "mixins";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  background: white!important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main-container {
+  color: $blackAlpha;
+  font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+.navbar {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  padding: 1rem;
+  width: 100%;
+  svg {
+    color: $blackAlpha;
+  }  
+}
+ 
+.hero-container {
+  background: $primary;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.hero-content {
+  width: 80%;
+  margin: auto;
+  margin-top: 5rem;
+  h2 {
+    line-height: 110%;
+    font-family: 'Sen', sans-serif;
+  }
+}
+
+.gradient-circle, .gradient-white {
+  border-radius: 50%;
+  position: absolute;
+  aspect-ratio: 1/1;
+}
+
+.gradient-circle {
+  background: $secondary;
+  background: linear-gradient(180deg, $secondary 45%, rgba(161,146,255,0) 100%);
+  width: 65%;
+  margin-bottom: 4rem;
+}
+
+.gradient-white {
+  background: white;
+  width: 75%;
+  margin-top: 0.5rem;
+}
+
+.starbucks-menu:hover {
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+  transform: rotate(-15deg);
+}
+
+.starbucks-cover {
+  margin-left: 0.5rem!important;
+}
+
+.size-arc {
+  border-left: 3px solid $tertiary;
+  border-top: 3px solid $tertiary;
+  border-right: 3px solid $secondary;
+  border-bottom: 3px solid $secondary;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
+.size-arc:hover {
+  transform: rotate(360deg);
+}
+
+.order-btn {
+  letter-spacing: 2px;
+  transition: 0.3s all ease-in-out;
+  background-color: $secondary!important;
+  font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+.order-btn:hover {
+  transform: translateY(-2px);
+  -webkit-box-shadow: 0px 8px 9px 0px rgba(155,101,24,0.5);
+  -moz-box-shadow: 0px 8px 9px 0px rgba(155,101,24,0.5);
+  box-shadow: 0px 8px 9px 0px rgba(155,101,24,0.5);
+}
+
+.copyrighted {
+  text-align: center;
+  font-size: 12px;
+  margin: 2rem auto 1rem auto;
+}
+
+@include mobile() {
+  .hero-content {
+    margin-top: 3rem;
+  }
+  .copyrighted {
+    font-size: 9px;
+  }
+}
