@@ -19,10 +19,7 @@ const Navbar = ({showToast}) => {
                     <Text fontSize='md' cursor="pointer" fontWeight="semibold" color="blackAlpha.900" ml={3} mr={3} onClick={()=>showToast('This is About Menu', 'menuAbout')}>About Us</Text>
                 </Flex> : '' }
                 <InputGroup w={40} alignItems="center">
-                    <InputLeftElement height="100%"
-                    pointerEvents='none'
-                    children={<FiSearch color="blackAlpha.900" />}
-                    />
+                    <InputLeftElement height="100%" pointerEvents='none'><FiSearch color="blackAlpha.900" /></InputLeftElement>
                     <Input backgroundColor="whiteAlpha.900" color="blackAlpha.900" borderRadius={12} placeholder='Search' _placeholder={{ opacity: 1, color: 'gray.500' }} size='sm' />
                 </InputGroup>
             </Flex>
