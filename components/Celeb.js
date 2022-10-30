@@ -17,7 +17,7 @@ const Celeb = () => {
                     <Image src="/celeb-3.png" alt="Celebrity Chef 3" layout="fill" objectFit="cover" />
                 </Box>
             </Flex>
-            <Button className={styles['seeMore-button']} mt={6} mb={4} borderRadius={0} paddingInline={10} color="blackAlpha.900">See More</Button>
+            <Button className={styles['seeMore-button']} mt={6} mb={4} borderRadius={0} paddingInline={10} backgroundColor='white' color="blackAlpha.900">See More</Button>
         </Flex>
     );
 }
